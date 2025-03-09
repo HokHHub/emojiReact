@@ -19,7 +19,7 @@ function App() {
       <form className="form">
         <input onKeyUp={handleKeyDown} className="form__input" type="text" placeholder="Placeholder" id="input" />
       </form>
-      <Emojies input={input}/>
+      <Emojies input={input.toLowerCase()}/>
       <Footer />
     </>
   )

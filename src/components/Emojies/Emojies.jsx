@@ -1,13 +1,21 @@
 import './Emojies.css'
 import '/src/Container.css'
 import Card from '../Card/Card'
+import { data } from '/src/data.js'
+
 export default function Emojies(props) {
+    console.log(props.input);
 
     return (
         <div className="emojies">
             <div className="container">
                 <div className="emojies__grid">
-                    <Card input={props.input}/>
+                    {data.map((el) => {
+                        
+                        if ((props.input) == '' || (el.title).toLowerCase().includes(props.input) || (el.keywords).toLowerCase().includes(props.input)) {
+                            return <Card key={el.title} input={props.input} data={data} title={el.title} keywords={el.keywords} symbol={el.symbol} />
+                        }
+                    })}
                 </div>
             </div>
         </div >

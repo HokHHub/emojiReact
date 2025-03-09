@@ -1,25 +1,14 @@
 import './Card.css'
-import { data } from '/src/data.js'
 
 export default function Card(props) {
-    console.log(props.input);
-    
+
     return (
         <>
-            {data.map((el) => {
-                // console.log(input.input);
-                
-                if ((props.input).toLowerCase() == '' || (el.title).toLowerCase().includes(props.input)) {
-                    return (<>
-                        <article className="emojies__card card" key={el.keywords}>
-                            <p key={el.symbol} className="card__ico">{el.symbol}</p>
-                            <a key={el.title} href="#" className="card__name">{el.title}</a>
-                            <p key={el.keywords} className="card__description">{el.keywords}</p>
-                        </article>
-                    </>)
-                }
-                
-            })}
+            <article className="emojies__card card">
+                <p className="card__ico">{props.symbol}</p>
+                <a href="#" className="card__name">{props.title}</a>
+                <p className="card__description">{Array.from(new Set(props.keywords.split(' '))).join(' ')}</p>
+            </article>
         </>
     )
 }

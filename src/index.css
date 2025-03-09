@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Inter';
+  src: url(fonts/Inter.woff);
+}
+
+:root {
+  font-family: 'Inter';
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: #EDEEF3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+
+}
+
+body {
+  margin: 0;
+}

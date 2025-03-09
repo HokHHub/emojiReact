@@ -4,8 +4,6 @@ import Card from '../Card/Card'
 import { data } from '/src/data.js'
 
 export default function Emojies(props) {
-    console.log(props.input);
-
     return (
         <div className="emojies">
             <div className="container">

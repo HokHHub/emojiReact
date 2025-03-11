@@ -4,7 +4,6 @@ import Form from './components/Form/Form'
 import Emojies from './components/Emojies/Emojies'
 import Footer from './components/Footer/Footer'
 import { useState } from 'react'
-import { useContext } from 'react'
 
 function App() {
   let [input, setInput] = useState('')

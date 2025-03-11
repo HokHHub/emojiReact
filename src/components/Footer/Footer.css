@@ -1,3 +1,7 @@
+footer {
+    margin-top: auto;
+}
+
 .footer__hr {
     height: 1px;
     flex-shrink: 0;

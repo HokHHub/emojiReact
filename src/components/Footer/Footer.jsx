@@ -5,8 +5,8 @@ export default function Footer() {
     return (
         <>
             <footer className="footer">
+                <hr className="footer__hr" />
                 <div className="container">
-                    <hr className="footer__hr" />
                     <p className="footer__copyright">2022 © Made with love by me</p>
                 </div>
             </footer>
